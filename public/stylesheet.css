@@ -1,0 +1,29 @@
+#titleBlock {
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+}
+
+#descriptionBlock {
+    border-style: solid;
+    border-width: thick;
+    border-color: lightgray;
+    background: linear-gradient(lightgray, darkgray);
+    margin-top: 10px; 
+}
+
+#blogHeader {
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+    padding-top: 5px; 
+    padding-left: 30px; 
+    margin-top: 40px; 
+}
+
+#blogBody {
+    background-color: lightgray;
+    padding-top: 20px; 
+    font-size: 18px; 
+    margin-bottom: 20px; 
+}

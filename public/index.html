@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>meta. Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
+<body>
+    <!-- The first thing to appear on the site is an upper navbar which, for now, will just contain a link to my portfolio site. 
+   -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">meta. Blog</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="http://bogoodskiportfolio.azurewebsites.net/" target="_blank">Portfolio Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Next we have a row with three columns, the center column containing the metaBlog heading title. -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <p></p>
+            </div>
+            <div class="col-md-8" id="titleBlock">
+                <h1>meta. Blog.</h1>
+            </div>
+            <div class="col-md-2">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- The next row contains a brief introduction to metaBlog.  -->
+        <div class="row">
+            <div class="col-md-2">
+                <p></p>
+            </div>
+            <div class="col-md-8" id="descriptionBlock">
+                <h4>metaBlog is a collection of my thoughts on technology and the developer life. metaBlog is a simple thing.
+                    The server code is written in JavaScript, via Nodejs, which uses a basic express app to serve up a public
+                    folder containing just some static HTML and CSS files and the like. If interested, you can view the source
+                    code with your browser's developer tools or, more easily, on gitHub
+                    <a href="https://github.com/sbogucki12/metablog" target="_blank">HERE.</a>
+                </h4>
+            </div>
+            <div class="col-md-2">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Next row contains the current post's title.  -->
+        <div class="row">
+            <div class="col-md-2">
+                <p></p>
+            </div>
+            <div class="col-md-8" id="blogHeader">
+                <div class="row">
+                    <p>
+                        <i>Dec. 26, 2017</i>
+                    </p>
+                </div>
+                <div class="row">
+                    <h2>Node is How My Brain Works</h2>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <p></p>
+            </div>
+        </div>
+
+
+        <!-- Next row contains the post's body.  -->
+        <div class="row">
+            <div class="col-md-2">
+                <p></p>
+            </div>
+            <div class="col-md-8" id="blogBody">
+                <p>For a while now, I’ve been studying programming languages, mostly C# and some JavaScript. Without, unfortunately,
+                    taking a step back and considering what end these languages would serve as the means.</p>
+                <br/>
+                <p>But, before we get to that…</p>
+                <br/>
+                <p>While languages interest me, the other night, I was reading about some things really compelling: the TCP/IP
+                    stack, HTTP, ports, networks, and how the internet actually works.</p>
+                <br/>
+                <p>Which led to a simple but, for me, paradigm-shifting observation:</p>
+                <br/>
+                <h4>
+                    <i>Nearly everything I build is just a tool to provide data to/from a data source to allow for user manipulation.
+                        Once you strip away all the abstracting layers of complexity, that’s really the key functionality
+                        of anything I build. Data in / Data out.</i>
+                </h4>
+                <br/>
+                <p>That observation led to monumental-thought-number-two: Why can’t users directly pull from the data source
+                    and, if they can’t, what currently exists in programming that is closest to that (“that” being: “allowing
+                    users to act on data directly at the data’s source, or with as few possible steps between source and
+                    user”).
+                </p>
+                <br/>
+                <p>In other words, I was sort of asking, “why can’t we just write JavaScript events that directly execute SQL
+                    commands?” Which, I don’t know, maybe we can; that’s not really the point here.</p>
+                <br/>
+                <p>I never really answered that question. But, by asking it, I traveled a journey of discovery that taught me
+                    more about Entities in the .NET framework and the general functionality of web APIs.</p>
+                <br/>
+                <p>I was finally taking the time to consider the means/end topic that I mentioned at the top of this post. (Which,
+                    as my lesson to any aspiring developer, is a consideration that you should probably enjoy much earlier
+                    in your journey than did I.)</p>
+                <br/>
+                <p>I had been for too long formulaically participating in courses, copying code, reading, studying, what have
+                    you. And only now, a few nights ago, sincerely considering “what does this all do?” Over time, my goal
+                    of learning C# was becoming the tree blinding me from seeing the forest.</p>
+                <br/>
+                <p>In the end, I was left unsatisfied with the solutions I was being provided to these lofty questions. At least
+                    by the tools then at my disposal: C#, .NET. Entity Framework, SQL. Once I became inquisitive about the
+                    big picture, I subsequently became more disappointed with the answers that I was receiving.</p>
+                <br/>
+                <p>In summation: To my simple brain, an ORM, controllers, services, etc., all written in a language different
+                    than the one used by the client suddenly seemed like overhead that hindered instead of aided the goal
+                    of getting the job done.</p>
+                <br/>
+                <p>
+                    <b>“There has to be a better way.” </b> — Steve, like 5 days ago.</p>
+                <br/>
+                <p>In pondering this, my subsequent thought was “why is everything in JavaScript an object? Shouldn’t everything
+                    be a record? A “record” in this case referring to a SQL database definition of a record.” Ultimately,
+                    what I was striving for, I think, was the least amount of serialization and parsing of any individual
+                    element of data to/from client/server. Why can’t the data at its source be exactly the same as the data
+                    presented to the user? Why all this parsing, stringifying, serialization, casting… WHY?!?</p>
+                <br/>
+                <p>So, that was the little intellectual calisthenic that my brain exercised for a few days.</p>
+                <br/>
+                <p>And then … THEN … I was reintroduced to Nodejs.</p>
+                <br/>
+                <p>Here’s the thing: I was actually introduced to Node a while back, But, then, I didn’t know of the problem
+                    that it was solving. So, to me, it seemed a less mature approach to doing the things C#, .NET were then
+                    doing well for me.</p>
+                <br/>
+                <p>Now … NOW … My perception is the complete opposite.</p>
+                <br/>
+                <p>Now, when I think of C#, .NET, Java, whatever, relative to Node and Mongo, I just see square pegs for a round
+                    hole. Whereas Node and Mongo are JavaScript tools for a JavaScript world.</p>
+                <br/>
+                <p>If I step back to my thoughts of a few nights ago and really play out my desire for seamless UI — to — data
+                    paradigm, the Mongo/Node stack would be pretty close to what I’d ultimately imagine. Though, perhaps
+                    in my dream scenario, with fewer callback/promises to master!</p>
+                <br/>
+                <p>In the end, this post isn’t really to champion Node/Mongo over other stacks. That’d be super presumptuous
+                    because I am way too inexperienced to really know the intricate benefits, consequences, security considerations,
+                    etc. This post is really about what works for me, personally.</p>
+                <br/>
+                <p>And, with Node, more than with C#, .NET, or even Angular, I feel like I am learning something that feels
+                    intimately natural to the way that I think.</p>
+                <br/>
+                <p>Studying Node is more than just taking classes to gain a skill that’ll satisfy some future employer. I’m
+                    learning about something that legitimately fascinates me, is immediately useful, and, perhaps most tantalizing,
+                    reveals even deeper, more powerful functionality with each aspect of it that I learn.</p>
+                <hr/>
+                <p>
+                    <b>PS:</b> A friend recommended two books that I am currently reading that I absolutely love. If you read
+                    the post above and thought to yourself, “Hmm… I sorta think like that”, then these two books will both
+                    surely appeal to you as well. Neither are cutting-edge modern, but both describe complex systems in digestible
+                    narration that breaks down intricate tools/concepts to their historical and simplistic roots, revealing
+                    that the most daunting modern inventions, in the end, perform ancient, simple functions. I highly recommend
+                    checking both books out:</p>
+                <br/>
+                <p>
+                    <a href="https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319" target="_blank">CODE by Charles Petzold</a>
+                </p>
+                <br/>
+                <p>
+                    <a href="https://www.amazon.com/Hacking-Art-Exploitation-Jon-Erickson/dp/1593271441" target="_blank">Hacking by Jon Erickson</a>
+                </p>
+
+            </div>
+            <div class="col-md-2">
+                <p></p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
