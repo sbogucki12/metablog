@@ -26,6 +26,10 @@ app.get('/public/archive1', (req, res) => {
 
 app.get('/public/archive2', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/burnout.html'))
+});
+
+app.get('/public/archive3', (req, res) => {
+    res.sendFile(path.join(__dirname + '/public/learntwolanguages.html'))
 })
 
 

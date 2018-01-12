@@ -23,6 +23,7 @@ I am no longer just serving up the public folder.  Instead, I use GET requests t
 + Day One (12/26/2017): Wrote server, setup layout, deployed to Heroku and first commit to gitHub. 
 + Day Two (1/6/2018): Updated server code, added a new entry, published to Heroku. 
 + Day Three (1/7/2018): Added a new post and links to the archives in the left-most column. 
++ Day Four (1/12/2018): Added a new post. 
 
 ## Screenshots
 
@@ -41,6 +42,9 @@ I am no longer just serving up the public folder.  Instead, I use GET requests t
 + Day Three: 
 
 ![Imgur](https://i.imgur.com/DpY8v4q.jpg)
+
++ Day Four: 
+![Imgur](https://i.imgur.com/Kxg8zvN.jpg)
 
 ## Credit
 
