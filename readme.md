@@ -17,6 +17,7 @@ I am no longer just serving up the public folder.  Instead, I use GET requests t
 5. Imported CSS bootstrap via CDN and wrote out the blog's basic layout. 
 6. Deployed to Heroku. 
 7. First Update:  Adjusted the index.js file to serve individual pages.  Added a new entry. 
+8. Created the archive linked list on the left-hand side of each page. 
 
 ## Timeline
 
@@ -24,6 +25,7 @@ I am no longer just serving up the public folder.  Instead, I use GET requests t
 + Day Two (1/6/2018): Updated server code, added a new entry, published to Heroku. 
 + Day Three (1/7/2018): Added a new post and links to the archives in the left-most column. 
 + Day Four (1/12/2018): Added a new post. 
++ Day Five (1/13/2018): Added a new post. 
 
 ## Screenshots
 
@@ -45,6 +47,9 @@ I am no longer just serving up the public folder.  Instead, I use GET requests t
 
 + Day Four: 
 ![Imgur](https://i.imgur.com/Kxg8zvN.jpg)
+
++ Day Five: 
+![Imgur](https://i.imgur.com/G3T5IS8.jpg)
 
 ## Credit
 

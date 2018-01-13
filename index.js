@@ -32,8 +32,9 @@ app.get('/public/archive3', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/learntwolanguages.html'))
 })
 
-
-
+app.get('/public/archive4', (req, res) => {
+    res.sendFile(path.join(__dirname + '/public/titlesandexpectations.html'))
+})
 
 // app.get receives request (req), returns response (res).
 // our first route handler, sends the index.html file concatenated with its file path. 

@@ -65,11 +65,11 @@
             <div class="col-md-8 blogHeader">
                 <div class="row">
                     <p>
-                        <i>January 12, 2018</i>
+                        <i>January 13, 2018</i>
                     </p>
                 </div>
                 <div class="row">
-                    <h2>Titles and Expectations</h2>
+                    <h2>[Spa: ASMR] Code Along (Part 1)</h2>
                 </div>
             </div>
             <div class="col-md-2">
@@ -77,16 +77,17 @@
             </div>
         </div>
 
-
         <!-- Next row contains the post's body.  -->
         <div class="row">
             <div class="col-md-2 archive">
 
-
                 <h4>Archive</h4>
                 <ul>
                     <li>
-                        <a href="/" style="color:black;">Titles and Expectations</a>
+                        <a href="/" style="color:black;">Code Along: Part 1</a>
+                    </li>
+                    <li>
+                        <a href="/public/archive4" style="color:black;">Titles and Expectations</a>
                     </li>
                     <li>
                         <a href="/public/archive3" style="color:black;">Learn TWO Languages!</a>
@@ -99,97 +100,170 @@
                     </li>
                 </ul>
 
-
             </div>
             <div class="col-md-8 blogBody">
+                <p>This is the first in a series of articles that I will publish describing the progress as I build a new website.</p>
+                <br/>
+                <h3>
+                    <i>Background</i>
+                </h3>
+                <br/>
+                <p>I had previously begun building a website that would serve as a directory to my favorite ASMR videos. That
+                    website, "Spa: ASMR", never advanced past its beginning stage and can be viewed
+                    <a href="http://spa-asmr.s3-website-us-west-1.amazonaws.com/"
+                        target="_blank">HERE</a>.</p>
                 <br/>
                 <p>
-                    <b>
-                        <i>"What's in a name? that which we call a rose
-                            <br/> By any other word would smell as sweet"</i>
-                    </b> -
-                    <u>Romeo and Juliet</u>, William Shakespeare.</p>
-                <br/>
-
-                <p>The experience written about today is unique to my own job hunt, but I hope there is a lesson to be learned
-                    in general that may be helpful to other career seekers.</p>
-                <br/>
-                <p>For vocation, I consider myself a web developer. I’ve been successful doing it, and have gone to school to
-                    become one.</p>
-                <br/>
-                <p>Many of my professional successes, however, have not been achieved via code. I’ve (co-) authored federal-level
-                    regulatory policy, been promoted to management, led troops in combat, published a mostly non-technical
-                    academic thesis. For a couple of examples.</p>
-                <br/>
-                <p>These experiences, as successful as I think they have been, have nevertheless become an obstacle to some
-                    of my future pursuits.
+                    <center>
+                        <img src="https://camo.githubusercontent.com/6a5597674843c9b37903da74052afd2cfefe9650/68747470733a2f2f692e696d6775722e636f6d2f4b7033316561382e6a7067"
+                            width="80%">
+                    </center>
                 </p>
                 <br/>
-                <p>I market myself as a “developer”. On a resume, however, these achievements not related to programming really
-                    only serve to distract potential employers from my ability to actually write quality code. Employers
-                    are busy and, as such, their quick glance at my resume may suggest that I am unqualified for the exact
-                    requirements of their developer position.</p>
+                <h3>
+                    <i>Plan</i>
+                </h3>
                 <br/>
-                <p>There is a lesson to be learned:
-                    <b>The key here, as in many things, is to manage expectations from the outset</b>.</p>
+                <p>My plans for Spa: ASMR now exceed my original intent. I want to make it much more user-interactive. For example,
+                    I would like users to be able to log in to the site via their social media accounts, select videos and
+                    add them to personal playlists of their own favorite ASMR videos. </p>
                 <br/>
-                <p>When one sees the title “developer” on a resume, there is an expectation to next see a familiar history of
-                    achievements.
+                <p>Whereas the original code architecture for Spa: ASMR was going to be mostly client-based, this new version
+                    is going to be built on top of its own dedicated SQL Server database, where video meta data will be stored.
+                    </p>
+                <br/>
+                <p>Finally, the new site will have a much more modern, sleek UX compared to its current incarnation. I like
+                    sites that look like these examples: </p>
+                <br/>
+                <ul>
+                    <li>
+                        <a href="http://olympixfitness.com/" target="_blank">Olympix</a>
+                    </li>
+                    <li>
+                        <a href="https://www.harvest.org/" target="blank">Harvest</a>
+                    </li>
+                </ul>
+                <br/>
+                <h3>
+                    <i>What is ASMR?</i>
+                </h3>
+                <br/>
+                <b>
+                    <i>A</i>
+                </b>utonomous
+                <b>
+                    <i>S</i>
+                </b>ensory
+                <b>
+                    <i>M</i>
+                </b>eridian
+                <b>
+                    <i>R</i>
+                </b>esponse is the "tingling" sensation that some people experience, usually in reaction to soft sounds or gentle
+                touching.</p>
+                <br/>
+                <p>People who experience ASMR often first notice the sensation during an exam from a doctor. Videos that try
+                    to stimulate the viewer’s ASMR have become popular on youtube. Many of these videos are in the form of
+                    role-plays; many such role-plays replicate the doctor’s exam.</p>
+                <br/>
+                <p>Content creators on youtube who specialize in making videos to stimulate ASMR are known as "ASMR artists."
+                    Read more about ASMR on
+                    <a href="https://en.wikipedia.org/wiki/Autonomous_sensory_meridian_response"
+                        target="_blank">Wikipedia</a>.</p>
+                <br/>
+                <h3>
+                    <i>Technologies</i>
+                </h3>
+                <br/>
+                <p>The backend infrastructure of this new version of Spa: ASMR will be written in
+                    <b>C#</b>, utilizing
+                    <b>.NET Core</b>. The
+                    <b>SQL Server</b> database will be created via
+                    <b>Entity Framework</b> using the "code-first" methodology. </p>
+                <br/>
+                <p>The client-side website will be written in
+                    <b>HTML</b> with
+                    <b>CSS</b> styling and
+                    <b>JavaScript</b> implemented via the
+                    <b>Angular</b> (5) framework. </p>
+                <br/>
+                <p>When complete, the entire site will be hosted in the cloud via
+                    <b>Microsoft Azure</b> with a domain name purchased via
+                    <b>GoDaddy</b>.</p>
+                <br/>
+                <h3>
+                    <i>Work So Far Completed</i>
+                </h3>
+                <br/>
+                <p>This morning, I created the initial domain data model to support the SQL Server database. Eventually, this
+                    domain model will be updated, encapsulated, and decoupled from the user interface completely by using
+                    some public-facing classes that will interact with the CRUD controllers. Here is what the initial domain
+                    data model looks like. Pretty simple: </p>
+                <br/>
+                <p>
+                    <center>
+                        <blockquote class="imgur-embed-pub" lang="en" data-id="yI6MFVb">
+                            <a href="//imgur.com/yI6MFVb">View post on imgur.com</a>
+                        </blockquote>
+                        <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                    </center>
                 </p>
                 <br/>
-                <p>Now, imagine this: after being promoted to management in my last role, my office’s manager tasked me to hire
-                    the replacement for the position that I had grown out of. When I began to write the job description seeking
-                    a developer, this office manager stopped me, saying, “We don’t need a developer. We need another
-                    <i>you</i>.”</p>
+                <p>Using this basic domain data model, I called on Entity Framework to create the initial SQL Server database
+                    using a migration. The migration is pictured and, below that, is an image of the newly created SQL Server
+                    database (shown in the SQL Server Management Studio): </p>
                 <br/>
-                <p>There is no way to sugarcoat this: I am really struggling to find a job right now. Another thing that should
-                    not be sugarcoated: I am capable and, as proven by my work history, a benefit to any organization that
-                    I join. If both things are true despite conflicting with each other, something external to both must
-                    also be true. And that thing must be the source of the apparent dichotomy.</p>
+                <p>
+                    <center>
+                        <blockquote class="imgur-embed-pub" lang="en" data-id="vx9nWxS">
+                            <a href="//imgur.com/vx9nWxS">View post on imgur.com</a>
+                        </blockquote>
+                        <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                    </center>
+                </p>
                 <br/>
-
-                <p>That thing, I think, is the title, “developer”. While I’m capable as a developer, marketing myself exclusively
-                    as that sets expectations that my professional experience doesn’t match. </p>
+                <p>
+                    <center>
+                        <blockquote class="imgur-embed-pub" lang="en" data-id="gYSxFPE">
+                            <a href="//imgur.com/gYSxFPE">View post on imgur.com</a>
+                        </blockquote>
+                        <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                    </center>
+                </p>
                 <br/>
-                <p>The power in one word, a title, can totally overshadow years’ worth of achievements and the promise of enormous
-                    future potential.</p>
+                <h3>
+                    <i>Next Steps</i>
+                </h3>
                 <br/>
-                <p>Now, I approach employers from a different perspective. I offer my services as a <a href="https://www.linkedin.com/in/sbogucki12/" target="_blank">“business analyst” with
-                    technical and management experience</a>. </p>
+                <p>I need to update the data model and the database via a new migration to include some constraints on the database
+                    columns. For one, some of the columns now allow for VARCHARS of maximum length, which is unnecessary.
+                    We’ll constrain these columns to a length of a more reasonable size. </p>
                 <br/>
-                <p>Literally nothing has changed about me, my potential, aptitude, or professional history. However, with that
-                    simple adjustment, from one title to another, my history is no longer perceived as under-qualified, instead
-                    I’m a senior in my field with a unique technical skillset beyond the normal expectations for the position.</p>
+                <p>Using either LINQ or SQL queries, I’m going seed the database with video data via Entity Framework (performing
+                    the Operational Relationship Mapping). During this phase, I’ll also create a class that nearly duplicates
+                    the current domain data model class. This class will serve as the public interface and interact with
+                    the CRUD controllers. The domain model class will be totally hidden from manipulation by Spa: ASMR visitors.
+                    </p>
                 <br/>
-                <p>My career goal remains the same. Coding will be the primary duty of my next position. And, to that end, I’m
-                    going to continue to work towards it as I have been. Today, for example, I’ll be working on a mobile
-                    app using Xamarin, a technology about which I have long desired to become more capable. </p>
+                <p>There is no schedule. I’m building this site among other projects. But, I hope you will join along as I continue.
+                    In the meanwhile, please follow me on social media for notifications of when I publish and check out
+                    my other sites. Thanks!</p>
                 <br/>
-
-                <p>The adjustment is being made simply in how I establish the expectations for employers considering my qualifications
-                    and experience. </p>
+                <ul>
+                    <li>
+                        <a href="http://bogoodskiportfolio.azurewebsites.net/" target="_blank">BoGoodSki.com</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/sbogucki12/" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sbogucki12" target="_blank">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/bogoodski/" target="_blank">Instagram</a>
+                    </li>
+                </ul>
                 <br/>
-                <p>Insisting that I am a “developer” (
-                    <i>a title that, without which, can one not code?</i>) has been like trying to fit a round peg into a square
-                    hole. And what would it say of my logical skills, so essential to a programmer, if I were insistently
-                    incapable of adjusting my approach based on the practical observation of facts?</p>
-                <br/>
-                <p>Stepping away from any generalities, I’ll close today saying this about my own situation specifically:</p>
-                <br/>
-                <p>Some employers have an amazing product and they need only a vastly experienced developer to
-                    bring that item to market. In that case, I may not be the right employee for them. Other employers, however,
-                    see a market inefficiency ripe for exploitation but simply haven’t identified exactly how to take advantage.
-                    <b>That</b> is where I come in. I can brainstorm on the strategic level to help craft the next big disruptive
-                    idea, while having the technical capability to actually bring it to fruition.</p>
-                <br/>
-                <p>That may not be exactly what a “developer” does, but it’s what
-                    <b>
-                        <i>I</i>
-                    </b> can do.
-                    <p>
-                        </br>
-
-
 
             </div>
             <div class="col-md-2">
@@ -203,7 +277,7 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8 nextButton">
                     <p>
-                        <a href="/public/archive3" style="color: black;">
+                        <a href="/public/archive4" style="color: black;">
                             <b>Next</b>
                         </a>
                     </p>
