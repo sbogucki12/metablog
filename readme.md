@@ -46,9 +46,11 @@ I am no longer just serving up the public folder.  Instead, I use GET requests t
 ![Imgur](https://i.imgur.com/DpY8v4q.jpg)
 
 + Day Four: 
+
 ![Imgur](https://i.imgur.com/Kxg8zvN.jpg)
 
 + Day Five: 
+
 ![Imgur](https://i.imgur.com/G3T5IS8.jpg)
 
 ## Credit
